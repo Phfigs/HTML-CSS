@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        h1{
+            padding: 10px;
+        }
+        
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav > a:hover{
+            color: black;
+        }
+     
+        nav{
+            background-color: rgb(92, 89, 89);    
+            padding: 5px; 
+            margin: 10px;  
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.39); /* deslocamento vertical>deslocamento horizontal> embaçamento da sombra> cor da sombra*/
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.39);
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+        }
+        aside > p{
+            margin: 0px;
+        }
+        article > aside{
+            background-color: rgb(94, 93, 93);
+            text-align: center;
+            color:white;
+            padding: 5px;
+        }
+
+        article > p::first-letter{
+            font-size: 30px;
+        }
+
+        footer{
+            background-color: black;
+            color: gray;
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body> 
+    <header> <!-- cabeçalho --> 
+        <h1>Meu site</h1>
+        <nav> <!-- Menu -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- conteúdo principal -->
+        <section id="assuntos"> <!-- seção  ** PODEM TER ARTIGOS DENTRO DE SEÇÕES TAMBÉM, É SÓ UM EXEMPLO --> 
+            
+        </section>
+        <section id="noticias">
+            <article>  <!-- artigo -->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corrupti expedita id nam, a qui libero! Tenetur dolorum porro aut consequatur, est necessitatibus sequi ipsam! Error aliquam quis inventore quibusdam.</p>
+                <aside> <!-- conteúdo periferico ao artigo, relativo a ele -->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- rodapé -->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

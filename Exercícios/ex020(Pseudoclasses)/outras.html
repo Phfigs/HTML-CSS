@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras pseudo-classes</title>
+    <style>
+        button:focus{
+            background-color: blue;
+        }
+        input:required{
+            background-color: red;
+        }
+        input:checked ~ label{
+            background-color: green;
+        }
+        button:disabled {
+            background-color: gray;
+        }
+        p#teste1::first-letter{
+            color:red;
+            font-size: 32px;
+        }
+        #teste2::first-line{
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando</h1>
+    <button>meu botão</button>
+
+    <p><input type="text" name="name" placeholder="Name" required></p>  
+    <p><button disabled>meu botão</button></p>
+    <p>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">Eu amo morangos!</label>
+    </p>
+    <p id="teste1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sit, quae eveniet praesentium suscipit repellendus quasi error? Ducimus nam quidem veniam doloremque quia molestiae repudiandae esse, fuga fugiat a unde!</p>
+    <p id="teste2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugit sed vero, assumenda voluptatum eligendi optio sunt sapiente velit debitis, ducimus asperiores cupiditate tempora incidunt magni ab animi, delectus dolor.</p>
+</body>
+</html>

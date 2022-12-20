@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkslategray; /*width style color*/
+            
+            padding: 10px; /* se forem todas iguais só informa uma vez, se não, primeiro top>right>bottom>left
+            Você pode também colocar somente 2 valores 10px e 20px, dessa forma os top/bottom recebem 10px e os left-right recebem 20px*/
+
+            margin: 20px auto 40px auto;
+            /* substituindo 20px por auto, no right e left, você consegue centralizar*/
+
+            outline: 5px dashed salmon; /*width style color*/ 
+        }
+        a{
+            border: 10px solid red;
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-leve, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
